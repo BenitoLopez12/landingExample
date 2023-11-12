@@ -60,11 +60,12 @@ header{
     left: 0;
     width: 100%;
     z-index: 3;
-    transition: 0.3s;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(0px);
+    transition: 0.1s;
 }
 header a{
     transition: 0.4s;
@@ -76,10 +77,9 @@ header a:hover{
     border-bottom: 1px solid #fff;
 }
 header.scroll-active{
-    background-color: rgba(0,0,0,0.2);
-    backdrop-filter: blur(50px);
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(200px);
     height: 65px;
-    transition: 0.3s;
 }
 
 main{
@@ -137,10 +137,11 @@ button{
     transform: translate(3px);
 }
 .btn-play{
-    transition: 1s;
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
 }
 .btn-play:hover{
-    transform: rotate(360deg) scale(1.5);
+    transform: rotate(120deg) scale(1.25);
 }
 
 #galeria,
@@ -236,6 +237,12 @@ button{
     align-items: center;
     border: 1px solid #fff;
     border-radius: 100px;
+}
+.caja-btn-inicio i{
+    transition: 0.3s;
+}
+.caja-btn-inicio i:hover{
+    transform: scale(1.25);
 }
 
 footer{
