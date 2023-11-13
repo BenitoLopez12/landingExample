@@ -37,15 +37,7 @@ body::after{
     height: 100vh;
     background: radial-gradient(circle, rgba(2,0,36,0) 0%, rgba(0,0,0,1) 100%);
 }
-nav{
-    width: 100%;
-    height: 100px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
 a{
     width: 100px;
     text-decoration: none;
@@ -54,23 +46,45 @@ a{
     align-items: center;
     color: #fff;
 }
+section{
+    padding-top: 150px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0px;
+}
+
 header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 3;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 15px;
+    z-index: 3;
     backdrop-filter: blur(0px);
     transition: 0.1s;
+    
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr;
+}
+nav{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50px;
 }
 header a{
     transition: 0.4s;
+    padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
-    height: 50px;
 
 }
 header a:hover{
@@ -81,24 +95,42 @@ header.scroll-active{
     backdrop-filter: blur(200px);
     height: 65px;
 }
+.btn-logo{
+    display: flex;
+    align-items: baseline;
+}
+.btn-logo img{
+    width: 130px;
+    transform: translateY(-3px);
+}
+.btn-logo:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
 
 main{
     width: 100%;
 }
 .video-fondo{
     width: 100%;
+    height: 100%;
     position: fixed;
     z-index: -2;
     top: 0;
     left: 0;
-    opacity: 0.65;
+    opacity: 0.75;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .video-fondo video{
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 .welcome{
     width: 100%;
-    height: calc(100vh - 0px);
+    height: 100vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -113,16 +145,15 @@ h1{
     margin: 0px;
     margin-top: 10px;
 }
-.welcome button{
-    margin-top: 100px;
-}
 button{
     background-color: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
     color: unset;
     cursor: pointer;
-
+}
+.btn-play{
+    margin-top: 100px;
 }
 .btn-play i{
     border: 1px solid #fff;
@@ -143,25 +174,23 @@ button{
 .btn-play:hover{
     transform: rotate(120deg) scale(1.25);
 }
-
-#galeria,
-#videos{
+.explore,
+.journual{
     text-align: center;
-    padding: 70px 0px;
 }
-#galeria h2, 
-#videos h2{
+.explore h2, 
+.journual h2{
     font-size: 26px;
 }
-#galeria .text-galery,
-#videos .text-galery{
+.explore .text-galery,
+.journual .text-galery{
     width: 500px;
     margin: auto;
     margin-top: 40px;
     font-size: 14px;
     opacity: 0.6;
 }
-.galeria-cards{
+.explore-cards{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,23 +234,45 @@ button{
     transform: scale(1.1);
 }
 
-.videos-cards{
+.journual-cards{
     margin-top: 70px;
     display: flex;
     justify-content: center;
     gap: 100px;
     width: 100%;
 }
-.videos-cards .card-video{
+.journual-cards .card-video{
     width: 400px;
 }
-.videos-cards video{
+.journual-cards video{
     width: 100%;
 }
 .card-video p{
     font-size: 14px;
     opacity: 0.6;
 }
+
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.about img{
+    width: 300px;
+}
+.info-about{
+    width: 300px;
+}
+.about h2{
+    font-size: 26px;
+}
+.about p{
+    font-size: 14px;
+    opacity: 0.6;
+}
+
 
 .caja-btn-inicio{
     display: flex;
@@ -280,17 +331,17 @@ footer{
 
 /* responsive table*/
 @media(max-width: 780px) {
-    .galeria-cards{
+    .explore-cards{
         flex-wrap: wrap;
     }
 
-    .videos-cards{
+    .journual-cards{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .videos-cards .card-video{
+    .journual-cards .card-video{
         width: 85%;
     }
 }
@@ -310,8 +361,8 @@ footer{
         text-align: center;
     }
 
-    #galeria .text-galery,
-    #videos .text-galery{
+    .explore .text-galery,
+    .journual .text-galery{
         width: 90%;
     }
 
