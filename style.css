@@ -273,6 +273,101 @@ button{
     opacity: 0.6;
 }
 
+.search-control{
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+.search-control label{
+    
+}
+.search-control input{
+    
+}
+.caja-lugares{
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+.card-lugar{
+    width: 250px;
+    height: 300px;
+    background-color: #161A1E;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card-lugar:hover{
+    transform: scale(1.05);
+}
+.card-lugar::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0,0,0,0.75) 20%, rgba(0,0,0,0) 100%);
+    transition: 0.3s;
+    z-index: 1;
+}
+.card-lugar:hover::before {
+    content: '';
+    opacity: 0;
+}
+.card-lugar:hover img{
+    transform: scale(1.1);
+}
+.card-lugar:hover .lugar-info{
+    /* transform: translateX(100%); */
+    opacity: 0;
+}
+.lugar-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.lugar-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+.lugar-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 3;
+}
+.card-lugar h3,
+.card-lugar p{
+    margin: 0px;
+    width: 100%;
+    padding: 7px 20px;
+    box-sizing: border-box;
+}
+.card-lugar h3{
+    font-size: 18px;
+}
+.card-lugar p{
+    font-size: 13px;
+    font-weight: bolder;
+    opacity: 0.75;
+}
+.card-lugar{
+    display: none;
+}
+.card-lugar.d-block{
+    display: block;
+}
 
 .caja-btn-inicio{
     display: flex;

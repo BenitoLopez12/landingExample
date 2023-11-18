@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -124,10 +124,235 @@
             </section>
 
             <section id="search">
-                <div class="search" style="margin-top: 100px; text-align: center;">
-                    <p>
-                        SEARCH in procces
-                    </p>
+                <div class="search">
+                    <h2 style="text-align: center;">Explore The World</h2>
+
+                    <div class="search-control">
+                        <label for="input-search">Search</label>
+                        <input type="text" id="input-search" onkeyup="buscador()">
+                    </div>
+                    <div id="caja-cards-lugares" class="caja-lugares">
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/cl1_santiago.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3> Santiago de Chile </h3>
+                                <p>
+                                    Capital principal de Chile, Región Metropolitana.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar d-block">
+                            <div class="lugar-img">
+                                <img src="img/places/cl2_torres_paine.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Torres del Paine, Chile</h3>
+                                <p>
+                                    Ubicado en la Región de Magallanes, Antártica Chilena.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/cl3_patagonia.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Patagonia, Chile</h3>
+                                <p>
+                                    La geografía de la Patagonia es increíblemente diversa.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/cl4_atacama.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Desierto de Atacama, Chile</h3>
+                                <p>
+                                    El lugar no polar más árido del planeta Tierra.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/cl5_archipelago.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Tierra del Fuego</h3>
+                                <p>
+                                    Norte del Estrecho de Magallanes, al Este del Mar Atlántico.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar d-block">
+                            <div class="lugar-img">
+                                <img src="img/places/mx1_cdmx.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>CDMX, México</h3>
+                                <p>
+                                    Centro social, turístico, artístico y cultural de la nación.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/mx2_sonora.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Sonora, México</h3>
+                                <p>
+                                    Estado con verdes montañas y un espectacular desierto.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/mx3_tulum.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Tulum, México </h3>
+                                <p>
+                                    Pueblo Mágico con encanto Maya al borde del Mar Caribe.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/mx4_colima.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Colima, México</h3>
+                                <p>
+                                    Deliciosos platillos tradicionales e innovadores
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/mx5_jalisco.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Jalisco, México</h3>
+                                <p>
+                                    Amplias mesetas de origen volcánico.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/nor1_trosmo.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Trosmo, Noruega</h3>
+                                <p>
+                                    Destino favorito para observar las Auroras Boreales
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar d-block">
+                            <div class="lugar-img">
+                                <img src="img/places/nor2_oslo.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Oslo, Noruega</h3>
+                                <p>
+                                    Siente la energía de la capital noruega.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/nor3_nordland.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Nordland, Noruega</h3>
+                                <p>
+                                    Cuenta con las costas más hermosas de Europa
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/nor4_bergen.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Bergen, Noruega</h3>
+                                <p>
+                                    Fundada en el siglo XI por un rey vikingo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/nor5_geiranger.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Geiranger, Noruega</h3>
+                                <p>
+                                    Altura que provoca inmensidad y asombro.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar d-block">
+                            <div class="lugar-img">
+                                <img src="img/places/pl1_krakow.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Cracovia, Polonia</h3>
+                                <p>
+                                    Patrimonio de la Humanidad más visitada de Europa.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/pl2_warsaw.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Varsovia, Polonia</h3>
+                                <p>
+                                    La ciudad capital de Polonia, centro de la vida y la cultura.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/pl3_tatra.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Parque TATRA, Polonia</h3>
+                                <p>
+                                    Parque de las reservas de la biosfera.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/pl4_wroclaw.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Breslavia, Polonia</h3>
+                                <p>
+                                    Urbe más importante de la región de Silesia
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-lugar">
+                            <div class="lugar-img">
+                                <img src="img/places/pl5_ojcow.webp" alt="">
+                            </div>
+                            <div class="lugar-info">
+                                <h3>Parque Ojcow</h3>
+                                <p>
+                                    Desfiladeros y rocas de curiosas formas, Mazo  de Hércules
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -165,6 +390,36 @@
             headerScroll()
         });
 
+        // search
+        function buscador() {
+			var input, filter, section, div, h1, i;
+			input = document.getElementById("input-search");
+			filter = input.value.toUpperCase();
+			section = document.getElementById("caja-cards-lugares");
+			div = section.getElementsByClassName("card-lugar");
+
+
+
+			for (i = 0; i < div.length; i++) {
+				h1 = div[i].getElementsByTagName("h3")[0];
+				if (h1) {
+					var palabrasEnFiltro = filter.split(' ');
+					var hallado = 0;
+                    
+                    for (var filtro of palabrasEnFiltro) {
+                        if (h1.innerHTML.toUpperCase().indexOf(filtro) > -1) {
+                            hallado++;
+                        }
+                    }
+
+                    if (hallado === palabrasEnFiltro.length) {
+                        div[i].style.display = "block";
+                    } else {
+                        div[i].style.display = "none";
+                    }
+				}
+			}
+		}
     </script>
 </body>
 </html>
